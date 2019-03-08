@@ -5,8 +5,9 @@ module PullTranslations
 
   def run
     5.times do
-      system("wti pull -c config/translation.yml")
-      system("wti pull -c config/questionnaire_translation.yml")
+      system("wti pull -c config/translation.yml") || fail("Failed to pull system translations")
+      system("wti pull -c config/questionnaire_translation.yml") || fail("Failed to pull questionnaire translations")
+
       begin
         WTISanity.check
         break
