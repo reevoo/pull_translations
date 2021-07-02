@@ -8,7 +8,7 @@ module PullTranslations
       begin
         system("wti pull -c config/translation.yml") || raise("Failed to pull system translations")
         system("wti pull -c config/questionnaire_translation.yml") || raise("Failed to pull questionnaire translations")
-        system("wti pull config/locales/messenger/* -c config/messenger_translations.yml") || raise("Failed to pull Messenger translations")
+        system("wti pull -c config/messenger_translations.yml") || raise("Failed to pull Messenger translations")
 
         WTISanity.check
         break
