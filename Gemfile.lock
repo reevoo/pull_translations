@@ -1,21 +1,22 @@
 PATH
   remote: .
   specs:
-    pull_translations (0.1.0)
+    pull_translations (0.3.0)
       web_translate_it (~> 2)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
-    multi_json (1.13.1)
-    multipart-post (2.0.0)
+    multi_json (1.15.0)
+    multipart-post (2.1.1)
+    optimist (3.0.1)
     parallel (1.12.1)
     parser (2.5.1.0)
       ast (~> 2.4.0)
     powerpack (0.1.1)
     rainbow (3.0.0)
-    rake (12.3.1)
+    rake (12.3.3)
     reevoocop (0.0.14)
       rubocop (~> 0.53.0)
     rubocop (0.53.0)
@@ -26,19 +27,18 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.9.0)
-    trollop (2.1.2)
     unicode-display_width (1.4.0)
-    web_translate_it (2.4.7)
+    web_translate_it (2.4.12)
       multi_json
       multipart-post (~> 2.0)
-      trollop (~> 2.0)
+      optimist (~> 3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   pull_translations!
-  rake
+  rake (~> 12.3, >= 12.3.3)
   reevoocop
 
 BUNDLED WITH

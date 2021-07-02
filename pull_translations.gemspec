@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "pull_translations"
-  s.version     = "0.2.0"
+  s.version     = "0.3.0"
   s.platform    = Gem::Platform::RUBY
   s.author      = "developers@reevoo.com"
   s.email       = "developers@reevoo.com"
@@ -11,6 +11,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.license       = "MIT"
   s.add_dependency "web_translate_it", ["~> 2"]
-  s.add_development_dependency "rake"
+  s.add_development_dependency "rake", "~> 12.3", ">= 12.3.3"
   s.add_development_dependency "reevoocop"
 end
