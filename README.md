@@ -1,6 +1,7 @@
 # Pull Translations
 
-Pull translations is a micro gem which purpose is to share same pull_translations script between RW, AAO, FILLER and MARK
+Pull translations is a micro gem which handles downloading translations from WTI (webtranslateit) and check for files correctness.
+It's used by Revieworld for Translation Bump process.
 
 ### Add to Gemfile
 ```ruby
